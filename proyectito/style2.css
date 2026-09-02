@@ -1,0 +1,307 @@
+body{
+  background: linear-gradient(80deg, #3e0a57 0% , #1d1d1d 50%, #0b0f59 100%); /* Define un fondo con degradado de color en ángulo de 80 grados */
+}
+h1{
+  margin: 40px auto; /* Define el margen exterior alrededor del elemento (40px arriba/abajo, automático a los lados) */
+  color: #ffffff; /* Establece el color del texto */
+  background-color: #4d4d4d6c; /* Define el color de fondo del elemento */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Define la tipografía o fuente del texto */
+  padding: 5px 15px 5px 15px; /* Define el espacio o relleno interior dentro de los bordes del elemento */
+  width: fit-content; /* Define el ancho del elemento para que se ajuste al tamaño de su contenido */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Crea un borde alrededor del elemento (grosor, estilo y color) */
+  border-radius: 20px; /* Redondea las esquinas del borde */
+  box-shadow: 0 0 20px rgba(26, 144, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247); /* Aplica sombras exteriores e interiores alrededor del elemento */
+  font-size: 60px; /* Establece el tamaño de la fuente del texto */
+  gap: 20px; /* Espacio de separación entre los elementos dentro de un contenedor flex o grid */
+  
+
+}
+ 
+.ricas-cosas{
+  display: flex; /* Define el modelo de caja como Flexbox para alinear y distribuir sus elementos hijos */
+  align-items: center; /* Alinea los elementos hijos en el eje vertical/secundario al centro */
+  gap: 24px;
+  margin: 20px 30px;
+  flex-wrap: wrap; /* Permite que los elementos hijos pasen a la siguiente línea si no caben en una sola */
+}
+
+.luna-llena{
+  flex: 0 0 auto; /* Define cómo se encoge o crece un elemento flex (crecer: 0, encoger: 0, base: auto) */
+  width: 300px;
+  height: 300px; /* Define la altura del elemento */
+  border-radius: 50%;
+  overflow: hidden; /* Oculta todo el contenido que sobresalga o se salga de los límites del contenedor */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(133, 80, 255, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.a{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ajusta la imagen dentro de su contenedor manteniendo su relación de aspecto y cubriendo el área */
+  display: block; /* Muestra el elemento como un bloque, ocupando todo el ancho disponible y salto de línea */
+}
+
+.texto-picante{
+  flex: 1 1 320px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 20px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  font-size: 1.05rem;
+  line-height: 1.6; /* Establece la altura de línea o espacio vertical entre líneas de texto */
+}
+
+.texto-picante p{
+  margin: 0;
+}
+.tremenda-posta{
+  display: flex;
+  align-items: stretch; /* Alinea los elementos hijos en el eje vertical/secundario para que se estiren y ocupen todo el espacio disponible */
+  justify-content: center; /* Alinea los elementos hijos en el eje horizontal/principal al centro */
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.b{
+  flex: 0 0 auto;
+  width: 300px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.c{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mi-rey{
+  flex: 1 1 260px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.651), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  text-align: center; /* Alinea el texto en el centro horizontal del contenedor */
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.mi-rey p{
+  margin: 0;
+}
+
+nav.barra-brutal{
+  margin: 30px;
+  padding: 0;
+  width: auto;
+  border: none;
+  box-shadow: none;
+  background: none; /* Elimina o borra el fondo definido previamente */
+  font-family:'Courier New', Courier, monospace;
+}
+
+.d{
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos con espacio uniforme entre ellos */
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.buscador-crack{
+  flex: 1 1 320px;
+}
+
+.e{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+}
+
+.f{
+  font-size: 1.1rem;
+}
+
+.anda-ps{
+  width: 100%;
+  border: none;
+  background: transparent; /* Hace que el fondo sea completamente transparente */
+  color: #ffffff;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
+  outline: none; /* Quita el contorno exterior resaltado cuando el elemento recibe foco */
+}
+
+.anda-ps::placeholder{ /* Pseudoelemento para dar estilo al texto provisional del campo de entrada */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.g{
+  display: flex;
+  gap: 12px;
+}
+
+.boton-loco,
+.boton-casita{
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  display: grid; /* Utiliza el diseño en cuadrícula (Grid) para organizar el contenido */
+  place-items: center; /* Centra el contenido vertical y horizontalmente dentro del contenedor grid */
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  cursor: pointer; /* Cambia la apariencia del cursor del ratón a una mano con dedo señalador */
+  transition: transform 0.15s ease, box-shadow 0.15s ease; /* Aplica una animación suave al cambiar de estado (hover) */
+}
+
+.boton-loco:hover,
+.boton-casita:hover{ /* Se aplica cuando el usuario pasa el cursor sobre el elemento */
+  transform: translateY(-2px); /* Desplaza o mueve el elemento verticalmente hacia arriba */
+  box-shadow: 0 0 26px rgba(133, 80, 255, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.h{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+}
+
+h2{
+  margin: 30px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 5px 15px;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.671);
+  text-align: center;
+  font-size: larger;
+}
+li{
+  margin: 30px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 5px 15px;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.671);
+  text-align: center;
+  font-size: larger;
+}
+
+.onda-vital{
+  display: flex; /* Flexbox para acomodar las tarjetas de planetas en fila y que salten de línea */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si no caben */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 26px; /* Separación entre tarjetas */
+  margin: 30px;
+}
+
+.wachin-loco{
+  display: flex; /* Cada tarjeta es su propio flexbox: foto a un lado, texto al otro */
+  align-items: center; /* Centra foto y texto verticalmente */
+  gap: 18px; /* Espacio entre la foto y el texto */
+  flex: 1 1 320px; /* Puede crecer y encogerse, con una base de 320px */
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  text-align: left;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wachin-loco:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 26px rgba(133, 80, 255, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.i{
+  flex: 0 0 auto; /* La foto no crece ni se encoge */
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(133, 80, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.j{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.se-pico{
+  flex: 1 1 auto; /* El texto ocupa el espacio restante de la tarjeta */
+}
+
+.k{
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+.tremendo-dato{
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif; /* Tipografía serif para el texto de la descripción */
+  font-weight: bold; /* Pone el texto de la descripción en negrita */
+  color: #d8b4fe; /* Color lila claro para destacar la descripción sobre el fondo oscuro */
+}
+
+footer{
+  margin: 30px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  font-family:'Courier New', Courier, monospace;
+  padding: 5px 15px;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.671);
+  text-align: center;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  .ricas-cosas, .tremenda-posta, .onda-vital {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .luna-llena, .b, .wachin-loco {
+    width: 80%; /* Ajusta el ancho de las fotos y tarjetas al 80% del contenedor */
+    max-width: 300px; /* Limita el ancho máximo a 300px */
+  }
+}

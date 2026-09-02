@@ -1,0 +1,151 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Elemento raíz que envuelve todo el contenido de la página -->
+<head> <!-- Contiene metadatos e información de configuración del documento no visible directamente -->
+  <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento (soporta tildes y símbolos) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a pantallas móviles -->
+  <title>Astroscope - Black holes</title> <!-- Define el título de la página que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="style2.css"> <!-- Vincula la hoja de estilos base del sitio, para reutilizar la barra de navegación -->
+  <link rel="stylesheet" href="style3.css"> <!-- Vincula la hoja de estilos propia de esta página, con un look más oscuro y denso en datos -->
+</head>
+
+<body> <!-- Contiene todo el contenido visible de la página web -->
+
+  <!-- Mismo navbar que el resto del sitio, para que la navegación sea consistente -->
+  <nav class="barra-brutal">
+    <div class="d">
+
+      <!-- LADO IZQUIERDO: caja de búsqueda visual, igual que en las demás páginas -->
+      <div class="buscador-crack">
+        <div class="e">
+          <span class="f">🔍</span>
+          <input type="text" placeholder="search black holes" class="anda-ps">
+        </div>
+      </div>
+
+      <!-- LADO DERECHO: mismos iconos del resto del sitio -->
+      <div class="g">
+        <a href="teo y paula parcial.html">
+          <button class="boton-casita">
+            <img src="https://www.emoji.family/api/emojis/1f3e0/noto/svg" alt="Inicio" class="h">
+          </button>
+        </a>
+        <a href="Second page.html">
+          <button class="boton-loco">
+            <img src="https://www.emoji.family/api/emojis/1fa90/noto/svg" alt="Planeta" class="h">
+          </button>
+        </a>
+        <!-- Estamos en esta página, así que el icono de agujero negro no lleva enlace -->
+        <button class="boton-loco">
+          <img src="https://static.wikia.nocookie.net/fortnite/images/1/1e/Cosm%C3%A9tico_Agujero_negro.png/revision/latest?cb=20260105220152&path-prefix=es" alt="Agujero negro" class="h">
+        </button>
+        <button class="boton-loco">
+          <img src="https://www.emoji.family/api/emojis/2b50/noto/svg" alt="Estrella" class="h">
+        </button>
+      </div>
+
+    </div> <!-- /navbar-wrapper -->
+  </nav>
+
+  <h1>Black holes</h1> <!-- Título principal, con tipografía distinta a la de la página de planetas -->
+
+  <p class="introduccion-bh">
+    A planet reflects light. A black hole erases it. Nothing that crosses the event
+    horizon — not gas, not light, not information — ever comes back out. Below are
+    five, ordered by mass: from a stellar corpse twenty times heavier than the Sun,
+    to an object that outweighs every star in the Milky Way combined.
+  </p>
+
+  <!-- Catálogo de agujeros negros: filas alternadas en vez de una grilla de tarjetas -->
+  <section class="catalogo-bh">
+
+    <article class="singularidad">
+      <div class="horizonte" aria-hidden="true">
+        <div class="disco"></div>
+        <div class="nucleo"></div>
+      </div>
+      <div class="datos-bh">
+        <h2>Cygnus X-1</h2>
+        <p class="resumen-bh">The first object widely accepted by astronomers as a black hole. It orbits a blue supergiant star, tearing gas from it into a disk so hot it glows in X-rays.</p>
+        <dl class="lectura">
+          <div><dt>Type</dt><dd>Stellar-mass</dd></div>
+          <div><dt>Mass</dt><dd>~21 M☉</dd></div>
+          <div><dt>Event horizon</dt><dd>~124 km across</dd></div>
+          <div><dt>Distance</dt><dd>~7,000 ly</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="singularidad reversa">
+      <div class="horizonte" aria-hidden="true">
+        <div class="disco"></div>
+        <div class="nucleo"></div>
+      </div>
+      <div class="datos-bh">
+        <h2>M82 X-1</h2>
+        <p class="resumen-bh">Sits in the rare gap between stellar and supermassive black holes. Objects this size are hard to find, and M82 X-1 is one of the best candidates for the class.</p>
+        <dl class="lectura">
+          <div><dt>Type</dt><dd>Intermediate-mass</dd></div>
+          <div><dt>Mass</dt><dd>~400 M☉</dd></div>
+          <div><dt>Event horizon</dt><dd>~2,360 km across</dd></div>
+          <div><dt>Distance</dt><dd>~12 million ly</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="singularidad">
+      <div class="horizonte" aria-hidden="true">
+        <div class="disco"></div>
+        <div class="nucleo"></div>
+      </div>
+      <div class="datos-bh">
+        <h2>Sagittarius A*</h2>
+        <p class="resumen-bh">The quiet giant at the center of our own galaxy. Stars have been tracked looping around it for decades, and in 2022 the Event Horizon Telescope finally imaged its shadow directly.</p>
+        <dl class="lectura">
+          <div><dt>Type</dt><dd>Supermassive</dd></div>
+          <div><dt>Mass</dt><dd>~4.3 million M☉</dd></div>
+          <div><dt>Event horizon</dt><dd>~24 million km across</dd></div>
+          <div><dt>Distance</dt><dd>~26,000 ly</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="singularidad reversa">
+      <div class="horizonte" aria-hidden="true">
+        <div class="disco"></div>
+        <div class="nucleo"></div>
+      </div>
+      <div class="datos-bh">
+        <h2>M87* — Pōwehi</h2>
+        <p class="resumen-bh">The first black hole ever photographed, in 2019. It sits at the core of the galaxy Messier 87, and its shadow alone is wider than our entire solar system.</p>
+        <dl class="lectura">
+          <div><dt>Type</dt><dd>Supermassive</dd></div>
+          <div><dt>Mass</dt><dd>~6.5 billion M☉</dd></div>
+          <div><dt>Event horizon</dt><dd>~38 billion km across</dd></div>
+          <div><dt>Distance</dt><dd>~55 million ly</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="singularidad">
+      <div class="horizonte" aria-hidden="true">
+        <div class="disco"></div>
+        <div class="nucleo"></div>
+      </div>
+      <div class="datos-bh">
+        <h2>TON 618</h2>
+        <p class="resumen-bh">One of the most massive black holes ever measured, powering a quasar brighter than the entire Milky Way. Light would take weeks to cross its shadow.</p>
+        <dl class="lectura">
+          <div><dt>Type</dt><dd>Ultramassive</dd></div>
+          <div><dt>Mass</dt><dd>~66 billion M☉</dd></div>
+          <div><dt>Event horizon</dt><dd>~388 billion km across</dd></div>
+          <div><dt>Distance</dt><dd>~18.2 billion ly</dd></div>
+        </dl>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>Astroscope 2026</footer>
+
+</body>
+</html>

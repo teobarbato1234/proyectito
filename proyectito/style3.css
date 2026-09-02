@@ -1,0 +1,195 @@
+/* style3.css — estilos exclusivos de la página de agujeros negros.
+   Se carga después de style2.css: reutiliza la barra de navegación
+   del sitio pero reemplaza el resto del look por algo más oscuro,
+   más denso y basado en datos reales de cada objeto. */
+
+body{
+  background: #050505;
+}
+
+/* --- Encabezado: sin la cápsula lila del resto del sitio, tipografía
+   serif grande que se "curva" ligeramente como luz deformada por
+   gravedad, en vez de una etiqueta con caja --- */
+h1{
+  margin: 50px 30px 10px 30px;
+  padding: 0;
+  width: auto;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #f4ede2;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  transform: skewX(-2deg);
+}
+
+.introduccion-bh{
+  margin: 0 30px 50px 30px;
+  max-width: 62ch;
+  color: #a79fae;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* --- Lista de agujeros negros --- */
+.catalogo-bh{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 30px 60px 30px;
+}
+
+.singularidad{
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  padding: 46px 10px;
+  border-top: 1px solid rgba(255, 205, 140, 0.14);
+}
+
+.singularidad:last-child{
+  border-bottom: 1px solid rgba(255, 205, 140, 0.14);
+}
+
+.singularidad.reversa{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.singularidad.reversa .lectura{
+  align-items: flex-end;
+}
+
+.singularidad.reversa .lectura > div{
+  flex-direction: row-reverse;
+}
+
+/* --- Visual del horizonte de sucesos, hecho solo con CSS: núcleo
+   negro, halo de disco de acreción y anillo de fotones --- */
+.horizonte{
+  position: relative;
+  width: 190px;
+  height: 190px;
+}
+
+.disco{
+  position: absolute;
+  inset: -22px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 122, 48, 0.05),
+    rgba(255, 122, 48, 0.55),
+    rgba(255, 210, 138, 0.85),
+    rgba(255, 122, 48, 0.55),
+    rgba(120, 20, 10, 0.25),
+    rgba(255, 122, 48, 0.05)
+  );
+  filter: blur(9px);
+  animation: girar 46s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .disco{ animation: none; }
+}
+
+@keyframes girar{
+  to{ transform: rotate(360deg); }
+}
+
+.nucleo{
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 40%, rgba(255, 210, 150, 0.9) 0%, rgba(255, 210, 150, 0.9) 2%, transparent 3%),
+    radial-gradient(circle at 50% 50%, #000 0%, #000 62%, rgba(255, 150, 70, 0.9) 63%, rgba(255, 210, 150, 0.5) 66%, transparent 70%);
+  box-shadow: 0 0 40px rgba(255, 130, 60, 0.35);
+}
+
+.datos-bh{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.datos-bh h2{
+  margin: 0 0 10px 0;
+  color: #f4ede2;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.resumen-bh{
+  margin: 0 0 18px 0;
+  max-width: 54ch;
+  color: #c9c2cf;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.singularidad.reversa .resumen-bh{
+  margin-left: auto;
+}
+
+.lectura{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin: 0;
+}
+
+.lectura > div{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.lectura dt{
+  color: #83798c;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+}
+
+.lectura dd{
+  margin: 0;
+  color: #ffcf8f;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+}
+
+footer{
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #6d6577;
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 1000px){
+  .horizonte{ width: 150px; height: 150px; }
+}
+
+@media (max-width: 760px){
+  h1{ font-size: 2.6rem; margin: 34px 20px 8px 20px; }
+  .introduccion-bh{ margin: 0 20px 34px 20px; }
+  .catalogo-bh{ margin: 0 20px 40px 20px; }
+  .singularidad,
+  .singularidad.reversa{
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 22px;
+  }
+  .singularidad.reversa .lectura{ align-items: flex-start; }
+  .singularidad.reversa .lectura > div{ flex-direction: row; }
+  .singularidad.reversa .resumen-bh{ margin-left: 0; }
+  .horizonte{ width: 140px; height: 140px; }
+}
