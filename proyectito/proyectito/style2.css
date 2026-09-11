@@ -13,6 +13,8 @@ h1{
   box-shadow: 0 0 20px rgba(26, 144, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247); /* Aplica sombras exteriores e interiores alrededor del elemento */
   font-size: 60px; /* Establece el tamaño de la fuente del texto */
   gap: 20px; /* Espacio de separación entre los elementos dentro de un contenedor flex o grid */
+  
+
 }
  
 .ricas-cosas{
@@ -100,35 +102,61 @@ h1{
   margin: 0;
 }
 
-/* ==========================================================
-   BARRA DE NAVEGACIÓN (Ocupa todo el ancho superior, sin buscador)
-   ========================================================== */
 nav.barra-brutal{
-  margin: 0;
-  padding: 15px 20px;
-  width: 100%;
-  box-sizing: border-box;
+  margin: 30px;
+  padding: 0;
+  width: auto;
   border: none;
-  background: rgba(30, 30, 30, 0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  background: none; /* Elimina o borra el fondo definido previamente */
   font-family:'Courier New', Courier, monospace;
 }
 
 .d{
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio a lo largo de toda la parte superior */
+  justify-content: space-between; /* Distribuye los elementos con espacio uniforme entre ellos */
   align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.buscador-crack{
+  flex: 1 1 320px;
+}
+
+.e{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  background-color: #4d4d4d6c;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+}
+
+.f{
+  font-size: 1.1rem;
+}
+
+.anda-ps{
   width: 100%;
-  box-sizing: border-box;
+  border: none;
+  background: transparent; /* Hace que el fondo sea completamente transparente */
+  color: #ffffff;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
+  outline: none; /* Quita el contorno exterior resaltado cuando el elemento recibe foco */
+}
+
+.anda-ps::placeholder{ /* Pseudoelemento para dar estilo al texto provisional del campo de entrada */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .g{
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around; /* Estira y distribuye los botones a lo largo de toda la barra */
+  gap: 12px;
 }
 
 .boton-loco,
@@ -137,20 +165,20 @@ nav.barra-brutal{
   height: 48px;
   padding: 0;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  display: grid; /* Utiliza el diseño en cuadrícula (Grid) para organizar el contenido */
+  place-items: center; /* Centra el contenido vertical y horizontalmente dentro del contenedor grid */
   overflow: hidden;
   color: #ffffff;
   background-color: #4d4d4d6c;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer; /* Cambia la apariencia del cursor del ratón a una mano con dedo señalador */
+  transition: transform 0.15s ease, box-shadow 0.15s ease; /* Aplica una animación suave al cambiar de estado (hover) */
 }
 
 .boton-loco:hover,
-.boton-casita:hover{
-  transform: translateY(-2px);
+.boton-casita:hover{ /* Se aplica cuando el usuario pasa el cursor sobre el elemento */
+  transform: translateY(-2px); /* Desplaza o mueve el elemento verticalmente hacia arriba */
   box-shadow: 0 0 26px rgba(133, 80, 255, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
@@ -175,7 +203,6 @@ h2{
   text-align: center;
   font-size: larger;
 }
-
 li{
   margin: 30px;
   color: #ffffff;
@@ -191,18 +218,18 @@ li{
 }
 
 .onda-vital{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 26px;
+  display: flex; /* Flexbox para acomodar las tarjetas de planetas en fila y que salten de línea */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si no caben */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 26px; /* Separación entre tarjetas */
   margin: 30px;
 }
 
 .wachin-loco{
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex: 1 1 320px;
+  display: flex; /* Cada tarjeta es su propio flexbox: foto a un lado, texto al otro */
+  align-items: center; /* Centra foto y texto verticalmente */
+  gap: 18px; /* Espacio entre la foto y el texto */
+  flex: 1 1 320px; /* Puede crecer y encogerse, con una base de 320px */
   color: #ffffff;
   background-color: #4d4d4d6c;
   font-family:'Courier New', Courier, monospace;
@@ -220,7 +247,7 @@ li{
 }
 
 .i{
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* La foto no crece ni se encoge */
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -237,7 +264,7 @@ li{
 }
 
 .se-pico{
-  flex: 1 1 auto;
+  flex: 1 1 auto; /* El texto ocupa el espacio restante de la tarjeta */
 }
 
 .k{
@@ -249,9 +276,9 @@ li{
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: #d8b4fe;
+  font-family: 'Times New Roman', Times, serif; /* Tipografía serif para el texto de la descripción */
+  font-weight: bold; /* Pone el texto de la descripción en negrita */
+  color: #d8b4fe; /* Color lila claro para destacar la descripción sobre el fondo oscuro */
 }
 
 footer{
@@ -267,55 +294,14 @@ footer{
   text-align: center;
   font-size: larger;
 }
-
 @media (max-width: 768px) {
-  h1{
-    font-size: 38px;
-    padding: 5px 12px;
+  .ricas-cosas, .tremenda-posta, .onda-vital {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
   }
 
-  h2, footer, li{
-    font-size: 18px;
-  }
-
-  nav.barra-brutal{
-    margin: 15px auto;
-  }
-
-  .d{
-    justify-content: center;
-  }
-
-  .ricas-cosas, .tremenda-posta, .onda-vital{
-    flex-direction: column;
-    justify-content: center;
-    gap: 18px;
-    margin: 15px;
-  }
-
-  .luna-llena{
-    width: 200px;
-    height: 200px;
-  }
-
-  .b{
-    width: 240px;
-    height: 340px;
-  }
-
-  .texto-picante, .mi-rey{
-    padding: 16px 18px;
-    font-size: 16px;
-  }
-
-  .wachin-loco{
-    flex-direction: column;
-    justify-content: center;
-    padding: 14px;
-  }
-
-  .i{
-    width: 90px;
-    height: 90px;
+  .luna-llena, .b, .wachin-loco {
+    width: 80%; /* Ajusta el ancho de las fotos y tarjetas al 80% del contenedor */
+    max-width: 300px; /* Limita el ancho máximo a 300px */
   }
 }
