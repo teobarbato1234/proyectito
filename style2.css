@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  background: linear-gradient(80deg, #3e0a57 0%, #1d1d1d 50%, #0b0f59 100%);
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 40px auto;
+  padding: 5px 15px;
+  width: fit-content;
+  background-color: rgba(77, 77, 77, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(26, 144, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+}
+
+.navbar {
+  margin: 20px 30px 30px;
+  padding: 10px 12px;
+  background: rgba(24, 18, 34, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.4);
+}
+
+.contenido-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconos-nav {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.iconos-nav a {
+  flex: 1;
+}
+
+.boton-nav,
+.boton-inicio,
+.boton-registro {
+  width: 100%;
+  height: auto;
+  padding: 8px 4px;
+  background-color: rgba(77, 77, 77, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.boton-nav:hover,
+.boton-inicio:hover,
+.boton-registro:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 26px rgba(133, 80, 255, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.icono {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin: 0 auto 4px;
+  object-fit: contain;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+  margin: 30px;
+}
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1 1 320px;
+  padding: 18px;
+  background-color: rgba(77, 77, 77, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+  color: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 26px rgba(133, 80, 255, 0.9), inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.foto {
+  width: 110px;
+  height: 110px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(133, 80, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.foto-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1 1 auto;
+}
+
+.titulo {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+.descripcion,
+.detalle {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #d8b4fe;
+}
+
+.detalle {
+  color: #b4e9fe;
+}
+
+.seccion-intro,
+.seccion-caracteristicas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+  padding: 24px;
+  background-color: rgba(77, 77, 77, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.247);
+}
+
+.imagen-intro,
+.bloque-imagen {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(133, 80, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.imagen-intro-img,
+.bloque-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-intro,
+.texto-caracteristica {
+  flex: 1 1 320px;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+footer {
+  margin: 30px;
+  padding: 5px 15px;
+  width: fit-content;
+  background-color: rgba(77, 77, 77, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(133, 80, 255, 0.719), inset 0 0 15px rgba(255, 255, 255, 0.671);
+  color: #ffffff;
+  font-size: larger;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 15px 15px 20px;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .seccion-intro,
+  .seccion-caracteristicas {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .imagen-intro,
+  .bloque-imagen {
+    width: 90%;
+    max-width: 280px;
+  }
+}

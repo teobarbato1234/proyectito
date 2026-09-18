@@ -1,0 +1,256 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Elemento raíz que envuelve todo el contenido de la página -->
+<head> <!-- Contiene metadatos e información de configuración del documento no visible directamente -->
+  <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento (soporta tildes y símbolos) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a pantallas móviles -->
+  <title>Astroscope - Planetas</title> <!-- Define el título de la página que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="style2.css"> <!-- Vincula el mismo archivo de estilos que usa el resto del sitio -->
+</head>
+
+<body> <!-- Contiene todo el contenido visible de la página web -->
+
+  <!-- Mismo navbar que la página principal, para que la navegación sea consistente en todo el sitio -->
+      <nav class="navbar">
+    <div class="contenido-navbar">
+
+      <div class="iconos-nav">
+        <a href="teo_y_paula_parcial.html">
+          <button class="boton-inicio">
+            <img src="https://www.emoji.family/api/emojis/1f3e0/noto/svg" alt="Inicio" class="icono">
+            Inicio
+          </button>
+        </a>
+        <a href="Second_page.html">
+          <button class="boton-nav">
+            <img src="https://www.emoji.family/api/emojis/1fa90/noto/svg" alt="Planeta" class="icono">
+            Planetas
+          </button>
+        </a>
+        <a href="galaxy.html">
+          <button class="boton-nav">
+            <img src="https://www.emoji.family/api/emojis/1f30c/noto/svg" alt="Galaxia" class="icono">
+            Galaxias
+          </button>
+        </a>
+        <a href="Black_holes.html">
+          <button class="boton-nav">
+            <img src="https://static.wikia.nocookie.net/fortnite/images/1/1e/Cosm%C3%A9tico_Agujero_negro.png/revision/latest?cb=20260105220152&path-prefix=es" alt="Agujero negro" class="icono">
+            Agujeros negros
+          </button>
+        </a>
+        <a href="third_page.html">
+          <button class="boton-nav">
+            <img src="https://www.emoji.family/api/emojis/2b50/noto/svg" alt="Estrella" class="icono">
+            Estrellas
+          </button>
+        </a>
+        <a href="register.html">
+          <button class="boton-registro">Register</button>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <h1>Planets</h1> <!-- Título principal de la sección -->
+
+  <h2>What is a planet?</h2>
+
+  <section class="galeria">
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Definition</p>
+        <p class="descripcion">A planet is a body that orbits the Sun, has enough mass and gravity to be nearly round, and has cleared the neighborhood around its orbit of other debris. Our Solar System has eight of them, ranging from small rocky worlds to enormous gas giants.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Types of planets</p>
+        <p class="descripcion">Astronomers group planets into three main kinds. Terrestrial planets are small and rocky, with solid surfaces. Gas giants are huge worlds made mostly of hydrogen and helium with no solid surface. Ice giants are similar to gas giants but rich in heavier volatile elements like water, ammonia, and methane.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">How many planets are there?</p>
+        <p class="descripcion">The Solar System has eight recognized planets. A ninth, Pluto, was reclassified as a dwarf planet in 2006 because it hasn't cleared its orbital neighborhood of other objects.</p>
+      </div>
+    </div>
+  </section>
+
+  <h2>Examples</h2>
+
+  <!-- Galería de planetas en flexbox: cada tarjeta tiene una foto y un nombre -->
+  <section class="galeria">
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercury_in_true_color.jpg" alt="Mercurio" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Mercury</p>
+        <p class="descripcion">The smallest planet and the closest to the Sun. It has almost no atmosphere and huge temperature swings between day and night.</p>
+        <p class="detalle">Type: Terrestrial</p>
+        <p class="detalle">Diameter: ~4,879 km</p>
+        <p class="detalle">Distance from Sun: ~57.9 million km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Venus-real_color.jpg" alt="Venus" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Venus</p>
+        <p class="descripcion">Similar in size to Earth, but covered in thick toxic clouds. It's the hottest planet due to a powerful greenhouse effect.</p>
+        <p class="detalle">Type: Terrestrial</p>
+        <p class="detalle">Diameter: ~12,104 km</p>
+        <p class="detalle">Distance from Sun: ~108.2 million km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Earth_seen_from_Apollo_17.jpg" alt="Tierra" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Earth</p>
+        <p class="descripcion">The only known planet with life. It has liquid water, a breathable atmosphere, and one natural satellite: the Moon.</p>
+        <p class="detalle">Type: Terrestrial</p>
+        <p class="detalle">Diameter: ~12,742 km</p>
+        <p class="detalle">Distance from Sun: ~149.6 million km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/OSIRIS_Mars_true_color.jpg" alt="Marte" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Mars</p>
+        <p class="descripcion">Known as the Red Planet because of its iron oxide surface. Home to the largest volcano and canyon in the Solar System.</p>
+        <p class="detalle">Type: Terrestrial</p>
+        <p class="detalle">Diameter: ~6,779 km</p>
+        <p class="detalle">Distance from Sun: ~227.9 million km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jupiter_and_its_shrunken_Great_Red_Spot.jpg" alt="Júpiter" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Jupiter</p>
+        <p class="descripcion">The largest planet in the Solar System, a gas giant famous for its Great Red Spot, a giant storm bigger than Earth.</p>
+        <p class="detalle">Type: Gas giant</p>
+        <p class="detalle">Diameter: ~139,820 km</p>
+        <p class="detalle">Distance from Sun: ~778.5 million km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saturn_during_Equinox.jpg" alt="Saturno" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Saturn</p>
+        <p class="descripcion">Best known for its spectacular ring system made of ice and rock. It's the least dense planet, less dense than water.</p>
+        <p class="detalle">Type: Gas giant</p>
+        <p class="detalle">Diameter: ~116,460 km</p>
+        <p class="detalle">Distance from Sun: ~1.43 billion km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uranus2.jpg" alt="Urano" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Uranus</p>
+        <p class="descripcion">An ice giant that spins almost on its side. It has a pale blue color due to methane in its atmosphere.</p>
+        <p class="detalle">Type: Ice giant</p>
+        <p class="detalle">Diameter: ~50,724 km</p>
+        <p class="detalle">Distance from Sun: ~2.87 billion km</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Neptune_Full.jpg" alt="Neptuno" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">Neptune</p>
+        <p class="descripcion">The farthest planet from the Sun, a windy ice giant with the fastest winds in the Solar System.</p>
+        <p class="detalle">Type: Ice giant</p>
+        <p class="detalle">Diameter: ~49,244 km</p>
+        <p class="detalle">Distance from Sun: ~4.5 billion km</p>
+      </div>
+    </div>
+
+  </section>
+
+  <h2>What is a planet made of?</h2>
+
+  <section class="galeria">
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Core</p>
+        <p class="descripcion">The dense center of a planet. Rocky planets like Earth have a metallic core, while gas and ice giants may have a small rocky or icy core buried deep under thousands of kilometers of gas.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Mantle and crust</p>
+        <p class="descripcion">Found in rocky planets, the mantle is a thick layer of hot rock surrounding the core, topped by a thin solid crust, the surface we can actually stand on or land a rover on.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Atmosphere</p>
+        <p class="descripcion">A layer of gases held in place by gravity. It can be razor-thin, like Mercury's, or make up almost the entire planet, like the swirling hydrogen and helium clouds of Jupiter and Saturn.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">Rings and moons</p>
+        <p class="descripcion">Many planets, especially the gas and ice giants, are circled by rings of ice and rock and by moons of their own, from Saturn's bright rings to Jupiter's dozens of moons.</p>
+      </div>
+    </div>
+  </section>
+
+  <h2>Rogue planets</h2>
+
+  <section class="galeria">
+    <div class="tarjeta">
+      <div class="foto">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Illustration of the rogue planet Cha 1107-7626 (eso2516a).jpg" alt="Planeta errante" class="foto-img">
+      </div>
+      <div class="info">
+        <p class="titulo">What is a rogue planet?</p>
+        <p class="descripcion">Also called free-floating planets, these are worlds that drift through space without orbiting any star. Some formed the normal way inside a planetary system and got ejected by the gravity of a passing star or a giant sibling planet; others may have formed on their own, the way a small star does, out of a collapsing cloud of gas and dust.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">How are they found?</p>
+        <p class="descripcion">Rogue planets don't reflect starlight the way planets in a solar system do, so they're extremely hard to spot. Astronomers mostly find them through microlensing, when a rogue planet's gravity briefly bends and brightens the light of a distant star passing behind it, or by directly imaging the faint heat glow young rogue planets still give off.</p>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <div class="info">
+        <p class="titulo">How common are they?</p>
+        <p class="descripcion">Estimates suggest the Milky Way could hold billions, maybe even trillions, of rogue planets, possibly outnumbering the stars themselves. Despite that, the odds of one ever passing anywhere near our Solar System are extremely small.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Astroscope 2026</footer>
+
+</body>
+</html>
